@@ -1,6 +1,6 @@
 ---
 # NVIDIA driver version
-nvidia_driver_version: 319.82
+nvidia_driver_version: 352.93
 
 # Haddocking application: disvis or powerfit
 haddock_app: disvis
