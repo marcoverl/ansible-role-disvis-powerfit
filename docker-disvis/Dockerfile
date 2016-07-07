@@ -1,6 +1,6 @@
 # docker build -t disvis .
 
-FROM ubuntu:14.04
+FROM indigodatacloud/ubuntu-sshd:14.04
 MAINTAINER Mario David <mariojmdavid@gmail.com>
 
 RUN ansible-galaxy install marcoverl.disvis-powerfit && \
