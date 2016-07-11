@@ -15,6 +15,7 @@
     - libxslt1-dev
     - python-dev
     - python-pip
+    - python-numpy
     - software-properties-common
     - tar
     - wget
@@ -56,8 +57,8 @@
     - virtualenv
     - pyfftw
 
-- name: pip install pyopencl
-  pip: name=pyopencl state=latest
+- name: pip install pyopencl==2015.1
+  pip: name=pyopencl version=2015.1 state=present
 
 - name: pip install gpyfft and {{ haddock_app }}
   pip: name={{ item }} state=present
