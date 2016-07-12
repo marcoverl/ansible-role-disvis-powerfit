@@ -61,6 +61,9 @@
 
 - name: pip install pyopencl==2015.1
   pip: name=pyopencl version=2015.1 state=present
+  
+- name: copy again libOpenCL in /usr/lib
+  copy: src=/usr/include/libOpenCL.so dest=/usr/lib 
 
 - name: install gpyfft
   command: git checkout b462420e19a534d832a9925f01109e80d3431de2 chdir=/usr/local/gpyfft
