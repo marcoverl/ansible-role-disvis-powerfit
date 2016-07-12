@@ -31,7 +31,10 @@
 
 - name: unarchive opencl headers
   unarchive: src={{ opencl_url }} dest=/usr/include copy=no
-
+  
+- name: copy libOpenCL in /usr/lib
+  copy: src=/usr/include/libOpenCL.so dest=/usr/lib 
+  
 - name: install nvidia driver
   command: ./{{ nvidia_driver }} -s --no-kernel-module chdir=/usr/local
 
