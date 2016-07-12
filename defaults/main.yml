@@ -11,4 +11,4 @@ nvidia_driver: "NVIDIA-Linux-x86_64-{{ nvidia_driver_version }}.run"
 nvidia_url: "{{ base_url }}/{{ nvidia_driver_version }}/{{ nvidia_driver }}"
 
 # URL with opencl headers
-opencl_url: http://www.lip.pt/~david/cl_include.tgz
+opencl_url: http://www.pd.infn.it/~verlato/GPU/opencl-files.tgz
