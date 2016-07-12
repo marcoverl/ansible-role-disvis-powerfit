@@ -60,7 +60,8 @@
   pip: name=pyopencl version=2015.1 state=present
 
 - name: install gpyfft
-  command: git checkout b462420e19a534d832a9925f01109e80d3431de2 && python setup.py install chdir=/usr/local/gpyfft
+  command: git checkout b462420e19a534d832a9925f01109e80d3431de2 chdir=/usr/local/gpyfft
+- command: python setup.py install chdir=/usr/local/gpyfft
 
 - name: pip install {{ haddock_app }}
   pip: name={{ item }} state=present
