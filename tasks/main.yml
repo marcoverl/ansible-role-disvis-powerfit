@@ -81,4 +81,4 @@
   unarchive: src=http://www.lip.pt/~david/powerfit-example.tgz dest=/home copy=no
   
 - name: unarchive disvis example
-  unarchive: src=http://www.pd.infn.it/~verlato/appl-files.tgz dest=/home copy=no
+  unarchive: src=http://www.pd.infn.it/~verlato/GPU/appl-files.tgz dest=/home copy=no
