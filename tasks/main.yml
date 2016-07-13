@@ -65,8 +65,8 @@
 #- name: pip install pyopencl
 #  pip: name=pyopencl state=latest
   
-#- name: copy again libOpenCL in /usr/lib
-#  copy: src=/usr/include/libOpenCL.so dest=/usr/lib/libOpenCL.so.1.0.0
+- name: copy again libOpenCL in /usr/lib
+  copy: src=/usr/include/libOpenCL.so dest=/usr/lib/libOpenCL.so.1.0.0
 
 - name: install gpyfft
   command: git checkout b462420e19a534d832a9925f01109e80d3431de2 chdir=/usr/local/gpyfft
